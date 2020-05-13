@@ -5,8 +5,8 @@ public class dupArrEle {
 	public static void main(String[] args) {
 
 //		String[] arr = {"Raghav", "Mahesh", "Pooja", "Mahesh", "Jay", "Jay", "Pragna", "Raghav"};
+//		int[] arr = { 12, 12, 13, 1, 5, 5, 0, 10, 12, 17, -1, -1 };
 
-		int[] arr = { 12, 12, 13, 5, 0, 10, 12, 17, -1, -1 };
 		int[] unqArr = new int[arr.length];
 
 		int counter = 0;
@@ -27,6 +27,5 @@ public class dupArrEle {
 				break;
 			System.out.print(unqArr[u] + " ");
 		}
-
 	}
 }
