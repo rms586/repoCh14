@@ -5,27 +5,27 @@ public class dupArrEle {
 	public static void main(String[] args) {
 
 //		String[] arr = {"Raghav", "Mahesh", "Pooja", "Mahesh", "Jay", "Jay", "Pragna", "Raghav"};
-//		String[] unqArr = new String[arr.length];
+//		int[] arr = { 12, 12, 13, 1, 5, 5, 0, 10, 12, 17, -1, -1 };
 
-		int[] arr = { 12, 12, 13, 1, 5, 5, 0, 10, 12, 17, -1, -1 };
 		int[] unqArr = new int[arr.length];
 
 		int counter = 0;
-
+	
+		This loop is for coping unique elements
 		for (int i = 0; i < arr.length; i++)
 			one: {
 				for (int j = 0; j < unqArr.length; j++)
-
+					if (unqArr[j] == arr[i])
+						break one;
 				unqArr[counter] = arr[i];
 				counter++;
 			}
-
+		
+		This loop is for printing
 		for (int u = 0; u < unqArr.length; u++) {
 			if (unqArr[u] == unqArr[u + 1])
 				break;
-				This is unwanted
 			System.out.print(unqArr[u] + " ");
 		}
-
 	}
 }
